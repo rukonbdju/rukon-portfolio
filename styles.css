@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Open+Sans&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #e0f2fe;
+    background: rgb(25 30 38);
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+nav {
+    position: sticky;
+    top: 0px;
+    width: 80vw;
+    margin: auto;
+    padding: 8px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:36px;
+}
+nav .navbar .menu .menu-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+}
+nav .navbar .menu .menu-container .menu-item{
+    list-style-type: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 150ms;
+
+}
+nav .navbar .menu .menu-container .menu-item:hover{
+    background-color: rgba(25, 103, 87, 0.529);
+}
+nav .navbar .menu .menu-container .menu-item:active{
+    background-color: rgba(25, 103, 87);
+    transform: scale(0.9);
+}
+
+main{
+    width: 80vw;
+    margin: auto;
+}
+
+main .skills-container table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 64px 0px;
+}
+main .skills-container table tbody{
+    text-align: center;
+}
+main .skills-container table tbody tr,td{
+    border: 2px solid rgba(25, 103, 87);
+}
+main .skills-container table tbody td{
+    padding: 32px;
+}
+main .skills-container table tbody td:hover{
+    background-color: rgba(25, 103, 87);
+}
+main .skills-container h2,p{
+    text-align: center;
+}
+
+button {
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    padding: 8px 16px;
+    border: 2px solid rgb(25 103 87);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 150ms;
+}
+
+button:active {
+    background-color: rgb(25 103 87);
+    transform: scale(0.9);
+}
+button:hover {
+    background-color: rgb(25 103 87);
+}
+
+header{
+    width: 80vw;
+    margin: auto;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-container section{
+    flex-basis: 50%;
+}
+.header-container section #name{
+    color: rgb(108, 218, 196);
+}
+.header-container section #description{
+    margin: 32px 0px;
+}
+.header-container section #description span{
+    color: rgb(108, 218, 196);
+    font-weight: 600;
+}
+img{
+    width: 100%;
+}
